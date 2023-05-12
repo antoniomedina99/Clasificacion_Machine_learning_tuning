@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<cp &le; 0.167<br/>entropy = 0.997<br/>samples = 155<br/>value = [113, 128]<br/>class = 1>, fillcolor="#e8f4fc"] ;
+1 [label=<slp &le; 0.75<br/>entropy = 0.833<br/>samples = 76<br/>value = [89, 32]<br/>class = 0>, fillcolor="#eeae80"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<oldpeak &le; 0.274<br/>entropy = 0.491<br/>samples = 52<br/>value = [75, 9]<br/>class = 0>, fillcolor="#e89051"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.75<br/>samples = 28<br/>value = [33, 9]<br/>class = 0>, fillcolor="#eca36f"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.0<br/>samples = 24<br/>value = [42, 0]<br/>class = 0>, fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label=<exng &le; 0.5<br/>entropy = 0.957<br/>samples = 24<br/>value = [14, 23]<br/>class = 1>, fillcolor="#b2d9f5"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.619<br/>samples = 18<br/>value = [4, 22]<br/>class = 1>, fillcolor="#5dafea"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.439<br/>samples = 6<br/>value = [10, 1]<br/>class = 0>, fillcolor="#e88e4d"] ;
+5 -> 7 ;
+8 [label=<thalachh &le; 0.622<br/>entropy = 0.722<br/>samples = 79<br/>value = [24, 96]<br/>class = 1>, fillcolor="#6ab6ec"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<age &le; 0.354<br/>entropy = 0.993<br/>samples = 26<br/>value = [19, 23]<br/>class = 1>, fillcolor="#ddeefa"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.0<br/>samples = 2<br/>value = [0, 4]<br/>class = 1>, fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label=<entropy = 1.0<br/>samples = 24<br/>value = [19, 19]<br/>class = 0>, fillcolor="#ffffff"] ;
+9 -> 11 ;
+12 [label=<age &le; 0.594<br/>entropy = 0.344<br/>samples = 53<br/>value = [5, 73]<br/>class = 1>, fillcolor="#47a4e7"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.121<br/>samples = 43<br/>value = [1, 60]<br/>class = 1>, fillcolor="#3c9fe5"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.787<br/>samples = 10<br/>value = [4, 13]<br/>class = 1>, fillcolor="#76bbed"] ;
+12 -> 14 ;
+}
