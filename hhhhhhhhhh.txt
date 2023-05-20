@@ -1,0 +1,21 @@
+# List of model 
+models = {
+   
+    'K-Nearest Neighbors': KNeighborsClassifier(n_jobs=-1),
+    'Support Vector Machine': SVC(),
+    'XGB Classifier': XGBClassifier(n_jobs=-1),
+    'Light Gradient Boosting Machine': LGBMClassifier(n_jobs=-1),
+    'Decision Tree Classifier': DecisionTreeClassifier()
+
+
+
+# import classification models 
+from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import GaussianNB
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
+from xgboost import XGBClassifier
+from sklearn.svm import SVC
+from lightgbm import LGBMClassifier
+from catboost import CatBoostClassifier
